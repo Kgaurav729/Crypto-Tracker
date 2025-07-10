@@ -1,12 +1,31 @@
-# React + Vite
+# 🪙 Crypto Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-first, responsive Single Page Application (SPA) built with **React**, **Vite**, **Tailwind CSS v4**, and **Shadcn UI**. It allows users to:
 
-Currently, two official plugins are available:
+- View real-time top cryptocurrency data
+- Convert from one crypto to another using INR as the base
+- Enjoy a clean, modern UI with subtle animations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Homepage displaying:
+  - Coin name (scrip)
+  - Current traded value
+  - 24h and 7d price change (colored accordingly)
+  - Coin logos
+- CryptoConverter page:
+  - Select two cryptocurrencies
+  - Input amount
+  - Get converted value
+- Responsive and accessible UI
+- Uses CoinGecko API (no API key needed)
+- One animation: fade+slide card reveal and hover scale
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Tech Stack
+
+- React + Vite
+- Tailwind CSS v4
+- Shadcn UI
+- CoinGecko API
+- JSX Components (functional)
+
