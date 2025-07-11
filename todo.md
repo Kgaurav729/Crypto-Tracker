@@ -3,6 +3,7 @@
 
 These features can be added in future:
 
+- [ ] Improve UI of cards , converter page.
 - [ ] Add loading spinners/skeleton while fetching data
 - [ ] Add a global error handler for failed API calls
 - [ ] Add search/filter functionality for coins
