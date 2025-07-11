@@ -42,8 +42,9 @@ function CryptoConverter() {
       <h2 className="text-2xl font-bold text-center">Crypto Converter</h2>
 
       <div className="space-y-2">
-        <Label>Amount</Label>
+        <Label htmlFor="amount">Amount</Label>
         <Input
+          id="amount"
           type="number"
           min={0}
           value={amount}
@@ -57,7 +58,11 @@ function CryptoConverter() {
           <SelectTrigger>
             <SelectValue placeholder="Select currency" />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent 
+            forceMount={process.env.NODE_ENV === 'test'}
+            position="popper"
+            portal={process.env.NODE_ENV !== 'test'}
+          >
             {coins.map((coin) => (
               <SelectItem key={coin.id} value={coin.symbol}>
                 {coin.symbol}
@@ -73,7 +78,11 @@ function CryptoConverter() {
           <SelectTrigger>
             <SelectValue placeholder="Select currency" />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent 
+            forceMount={process.env.NODE_ENV === 'test'}
+            position="popper"
+            portal={process.env.NODE_ENV !== 'test'}
+          >
             {coins.map((coin) => (
               <SelectItem key={coin.id} value={coin.symbol}>
                 {coin.symbol}

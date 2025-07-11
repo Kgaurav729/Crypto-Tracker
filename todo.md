@@ -3,7 +3,6 @@
 
 These features can be added in future:
 
-- [ ] Add unit tests for Homepage and CryptoConverter
 - [ ] Add loading spinners/skeleton while fetching data
 - [ ] Add a global error handler for failed API calls
 - [ ] Add search/filter functionality for coins

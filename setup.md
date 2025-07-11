@@ -17,6 +17,10 @@ npm install
 ```
 ---
 
+-Create a .env.local file (if needed) to store API-related keys (optional for CoinGecko).
+
+---
+
 ## 3. Start Development Server
 
 ```bash
@@ -26,6 +30,32 @@ npm run dev
 
 ---
 
+# Testing Setup
+
+This project uses Vitest and React Testing Library for unit testing.
+
+## 🔹 Running Tests
+To run the test suite:
+
+```bash
+npm run test
+```
+or if using Vitest directly:
+
+```bash
+npx vitest
+```
 
 
+## 🔹 What is Covered
+
+Homepage.test.jsx: Verifies crypto cards render correctly based on mocked API data.
+
+The test ensures:
+
+-Proper rendering of all coin data (symbol, logo, price, 24h/7d changes).
+-Card layout integrity.
+
+
+---
 

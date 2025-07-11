@@ -18,10 +18,10 @@ function CryptoCard({ name, logo, price, change24h, change7d }) {
 
       <div className="flex-1 min-w-0">
         <h3 className="text-lg font-bold truncate">{name}</h3>
-        <p className="text-gray-600 dark:text-gray-300 truncate">₹ {price.toLocaleString()}</p>
+        <p className="text-gray-600 dark:text-gray-300 truncate" data-testid="price">₹ {price.toLocaleString()}</p>
 
         <div className="flex gap-4 mt-1 text-sm">
-          <span className={change24h >= 0 ? "text-green-500" : "text-red-500"}>
+          <span className={change24h >= 0 ? "text-green-500" : "text-red-500"} data-testid="change-24h">
             24h: {change24h}%
           </span>
           <span className={change7d >= 0 ? "text-green-500" : "text-red-500"}>
